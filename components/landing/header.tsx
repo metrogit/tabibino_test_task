@@ -233,13 +233,13 @@ const Header = memo(({ dict, lang }: HeaderProps) => {
               ) : (
                 <div className="flex items-center gap-1 sm:gap-2">
                                      <Button asChild variant="ghost" size="sm" className="text-xs sm:text-sm px-2 sm:px-3 py-1.5 rounded-lg">
-                     <Link href={"/fa/auth/login"}>
+                     <Link href={`/${lang}/auth/login`}>
                        <span className="hidden sm:inline">{dict.auth.signIn}</span>
                        <span className="sm:hidden">Login</span>
                      </Link>
                    </Button>
                    <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white text-xs sm:text-sm px-2 sm:px-3 py-1.5 rounded-lg">
-                     <Link href={"/fa/auth/login"}>
+                     <Link href={`/${lang}/auth/login`}>
                        <span className="hidden sm:inline">{dict.common.start}</span>
                        <span className="sm:hidden">Start</span>
                      </Link>

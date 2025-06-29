@@ -8,10 +8,6 @@ export const loginSchema = z.object({
 });
 
 export const authOptions = {
-  pages: {
-    signIn: "/fa/auth/login",
-    error: "/fa/auth/error",
-  },
   providers: [
     CredentialsProvider({
       name: "Credentials",
