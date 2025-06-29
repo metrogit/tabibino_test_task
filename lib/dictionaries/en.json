@@ -1,0 +1,144 @@
+{
+  "auth": {
+    "login": "Login",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Sign in",
+    "error": "Invalid credentials",
+    "title": "Login to your account",
+    "description": "Enter your email below to login to your account",
+    "forgotPassword": "Forgot password?",
+    "googleLogin": "Login with Google",
+    "noAccount": "Don't have an account?",
+    "signUp": "Sign up",
+    "invalidCredentials": "Invalid email or password",
+    "accessDenied": "Access denied",
+    "loginSuccess": "Successfully logged in!",
+    "signIn": "Sign In",
+    "signingIn": "Signing in..."
+  },
+  "common": {
+    "welcome": "Welcome",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode",
+    "language": "Language",
+    "english": "English",
+    "persian": "فارسی",
+    "start": "Start"
+  },
+  "header": {
+    "appointments": "Appointments",
+    "schedule": "Schedule",
+    "patients": "Patients",
+    "profile": "Profile",
+    "settings": "Settings",
+    "logout": "Logout"
+  },
+  "hero": {
+    "badge": "Trusted by 10,000+ patients",
+    "title": {
+      "part1": "Healthcare",
+      "part2": "Made Simple"
+    },
+    "description": "Book appointments with qualified doctors in seconds. Your health journey starts here.",
+    "buttons": {
+      "myAppointments": "My Appointments",
+      "viewSchedule": "View Schedule",
+      "bookAppointment": "Book Appointment",
+      "signIn": "Sign In"
+    },
+    "trustIndicators": {
+      "support": "24/7 Support",
+      "security": "Secure Platform",
+      "booking": "Instant Booking"
+    },
+    "features": {
+      "quickBooking": "Quick Booking",
+      "expertDoctors": "Expert Doctors",
+      "securePrivate": "Secure & Private",
+      "trustedCare": "Trusted Care",
+      "support": "24/7 Support",
+      "findNearby": "Find Nearby"
+    }
+  },
+  "doctorHome": {
+    "title": "Welcome Back, Doctor",
+    "description": "Manage your appointments, patients, and medical practice efficiently from your personalized dashboard.",
+    "badge": "Doctor Portal",
+    "stats": {
+      "todayAppointments": "Today's Appointments",
+      "activePatients": "Active Patients",
+      "hoursToday": "Hours Today"
+    }
+  },
+  "adminHome": {
+    "title": "System Administration",
+    "description": "Monitor and manage the entire platform, users, and system health from this central control panel.",
+    "badge": "Admin Portal",
+    "stats": {
+      "totalUsers": "Total Users",
+      "activeDoctors": "Active Doctors",
+      "systemHealth": "System Health",
+      "activeSessions": "Active Sessions"
+    }
+  },
+  "pages": {
+    "admin": {
+      "title": "Admin Dashboard",
+      "description": "Welcome to the admin panel. Here you can manage the entire system.",
+      "features": {
+        "userManagement": "User Management",
+        "systemSettings": "System Settings",
+        "reports": "Reports & Analytics",
+        "backups": "Data Backups"
+      },
+      "welcome": "Welcome to Admin Panel",
+      "subtitle": "Manage your platform with administrative privileges"
+    },
+    "doctor": {
+      "title": "Doctor Portal",
+      "description": "Welcome to your doctor dashboard. Manage your patients and appointments.",
+      "features": {
+        "appointments": "Today's Appointments",
+        "patients": "Patient Records",
+        "schedule": "Schedule Management",
+        "prescriptions": "Prescriptions"
+      },
+      "welcome": "Welcome Doctor",
+      "subtitle": "Your medical practice management hub"
+    },
+    "client": {
+      "title": "Client Portal",
+      "description": "Welcome to your personal health dashboard. Track your appointments and health records.",
+      "features": {
+        "myAppointments": "My Appointments",
+        "healthRecords": "Health Records",
+        "prescriptions": "My Prescriptions",
+        "bookNew": "Book New Appointment"
+      },
+      "welcome": "Welcome to Your Health Portal",
+      "subtitle": "Your personal healthcare management space"
+    }
+  },
+  "error": {
+    "notImplemented": "Feature not implemented yet",
+    "404": {
+      "title": "Page Not Found",
+      "description": "The page you're looking for doesn't exist.",
+      "goHome": "Go Home"
+    },
+    "500": {
+      "title": "Internal Server Error",
+      "description": "Something went wrong on our end."
+    },
+    "403": {
+      "title": "Access Forbidden",
+      "description": "You don't have permission to access this resource."
+    },
+    "generic": {
+      "title": "Something went wrong",
+      "description": "An unexpected error occurred.",
+      "retry": "Try Again"
+    }
+  }
+} 

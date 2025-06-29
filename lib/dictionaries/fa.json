@@ -1,0 +1,144 @@
+{
+  "auth": {
+    "login": "ورود",
+    "email": "ایمیل",
+    "password": "رمز عبور",
+    "submit": "ورود",
+    "error": "اطلاعات نامعتبر",
+    "title": "ورود به حساب کاربری",
+    "description": "ایمیل خود را برای ورود به حساب کاربری وارد کنید",
+    "forgotPassword": "رمز عبور را فراموش کرده‌اید؟",
+    "googleLogin": "ورود با گوگل",
+    "noAccount": "حساب کاربری ندارید؟",
+    "signUp": "ثبت نام",
+    "invalidCredentials": "ایمیل یا رمز عبور نامعتبر است",
+    "accessDenied": "دسترسی غیرمجاز",
+    "loginSuccess": "با موفقیت وارد شدید!",
+    "signIn": "ورود",
+    "signingIn": "در حال ورود..."
+  },
+  "common": {
+    "welcome": "خوش آمدید",
+    "darkMode": "حالت تاریک",
+    "lightMode": "حالت روشن",
+    "language": "زبان",
+    "english": "English",
+    "persian": "فارسی",
+    "start": "شروع"
+  },
+  "header": {
+    "appointments": "نوبت‌ها",
+    "schedule": "برنامه",
+    "patients": "بیماران",
+    "profile": "پروفایل",
+    "settings": "تنظیمات",
+    "logout": "خروج"
+  },
+  "hero": {
+    "badge": "مورد اعتماد بیش از ۱۰،۰۰۰ بیمار",
+    "title": {
+      "part1": "خدمات درمانی",
+      "part2": "به سادگی"
+    },
+    "description": "در چند ثانیه با پزشکان متخصص نوبت بگیرید. سفر سلامتی شما از اینجا آغاز می‌شود.",
+    "buttons": {
+      "myAppointments": "نوبت‌های من",
+      "viewSchedule": "مشاهده برنامه",
+      "bookAppointment": "رزرو نوبت",
+      "signIn": "ورود"
+    },
+    "trustIndicators": {
+      "support": "پشتیبانی ۲۴/۷",
+      "security": "پلتفرم امن",
+      "booking": "رزرو آنی"
+    },
+    "features": {
+      "quickBooking": "رزرو سریع",
+      "expertDoctors": "پزشکان متخصص",
+      "securePrivate": "امن و خصوصی",
+      "trustedCare": "مراقبت قابل اعتماد",
+      "support": "پشتیبانی ۲۴/۷",
+      "findNearby": "جستجوی نزدیک"
+    }
+  },
+  "doctorHome": {
+    "title": "خوش آمدید دکتر",
+    "description": "نوبت‌ها، بیماران و طبابت خود را از پنل شخصی‌سازی شده خود به راحتی مدیریت کنید.",
+    "badge": "پنل پزشک",
+    "stats": {
+      "todayAppointments": "نوبت‌های امروز",
+      "activePatients": "بیماران فعال",
+      "hoursToday": "ساعات امروز"
+    }
+  },
+  "adminHome": {
+    "title": "مدیریت سیستم",
+    "description": "کل پلتفرم، کاربران و سلامت سیستم را از این پنل کنترل مرکزی نظارت و مدیریت کنید.",
+    "badge": "پنل مدیریت",
+    "stats": {
+      "totalUsers": "کل کاربران",
+      "activeDoctors": "پزشکان فعال",
+      "systemHealth": "سلامت سیستم",
+      "activeSessions": "جلسات فعال"
+    }
+  },
+  "pages": {
+    "admin": {
+      "title": "پنل مدیریت",
+      "description": "به پنل مدیریت خوش آمدید. اینجا می‌توانید کل سیستم را مدیریت کنید.",
+      "features": {
+        "userManagement": "مدیریت کاربران",
+        "systemSettings": "تنظیمات سیستم",
+        "reports": "گزارشات و تحلیل‌ها",
+        "backups": "پشتیبان‌گیری داده‌ها"
+      },
+      "welcome": "به پنل مدیریت خوش آمدید",
+      "subtitle": "پلتفرم خود را با اختیارات مدیریتی کنترل کنید"
+    },
+    "doctor": {
+      "title": "پنل پزشک",
+      "description": "به پنل پزشک خوش آمدید. بیماران و نوبت‌های خود را مدیریت کنید.",
+      "features": {
+        "appointments": "نوبت‌های امروز",
+        "patients": "پرونده بیماران",
+        "schedule": "مدیریت برنامه",
+        "prescriptions": "نسخه‌ها"
+      },
+      "welcome": "خوش آمدید دکتر",
+      "subtitle": "مرکز مدیریت طبابت شما"
+    },
+    "client": {
+      "title": "پنل بیمار",
+      "description": "به پنل شخصی سلامت خود خوش آمدید. نوبت‌ها و سوابق پزشکی خود را پیگیری کنید.",
+      "features": {
+        "myAppointments": "نوبت‌های من",
+        "healthRecords": "سوابق پزشکی",
+        "prescriptions": "نسخه‌های من",
+        "bookNew": "رزرو نوبت جدید"
+      },
+      "welcome": "به پنل سلامت شخصی خوش آمدید",
+      "subtitle": "فضای مدیریت شخصی مراقبت‌های بهداشتی شما"
+    }
+  },
+  "error": {
+    "notImplemented": "این قابلیت هنوز پیاده‌سازی نشده است",
+    "404": {
+      "title": "صفحه یافت نشد",
+      "description": "صفحه‌ای که دنبال آن هستید وجود ندارد.",
+      "goHome": "بازگشت به خانه"
+    },
+    "500": {
+      "title": "خطای داخلی سرور",
+      "description": "مشکلی در سمت ما رخ داده است."
+    },
+    "403": {
+      "title": "دسترسی ممنوع",
+      "description": "شما اجازه دسترسی به این منبع را ندارید."
+    },
+    "generic": {
+      "title": "مشکلی پیش آمده",
+      "description": "خطای غیرمنتظره‌ای رخ داده است.",
+      "retry": "تلاش مجدد"
+    }
+  }
+} 
