@@ -8,7 +8,7 @@ export const loginSchema = z.object({
 });
 
 export const authOptions = {
-  secret: process.env.NEXTAUTH_SECRET,
+  secret: "nr^6w0!&6@v90=^2qx69&-jn#@2ox5l8dy&_b&=2f#gys&j%)c",
   providers: [
     CredentialsProvider({
       name: "Credentials",
