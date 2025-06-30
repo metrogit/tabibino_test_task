@@ -232,13 +232,13 @@ const Header = memo(({ dict, lang }: HeaderProps) => {
                                      <Button asChild variant="ghost" size="sm" className="text-xs sm:text-sm px-2 sm:px-3 py-1.5 rounded-lg">
                      <Link href={`/${lang}/auth/login`}>
                        <span className="hidden sm:inline">{dict.auth.signIn}</span>
-                       <span className="sm:hidden">Login</span>
+                       <span className="sm:hidden">{dict.auth.signIn}</span>
                      </Link>
                    </Button>
                    <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white text-xs sm:text-sm px-2 sm:px-3 py-1.5 rounded-lg">
                      <Link href={`/${lang}/auth/login`}>
                        <span className="hidden sm:inline">{dict.common.start}</span>
-                       <span className="sm:hidden">Start</span>
+                       <span className="sm:hidden">{dict.common.start}</span>
                      </Link>
                    </Button>
                 </div>
@@ -317,7 +317,7 @@ const Header = memo(({ dict, lang }: HeaderProps) => {
             {/* Language switcher*/}
             <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
               <div className="flex items-center justify-between">
-                <span className="text-sm text-gray-600 dark:text-gray-400">Language</span>
+                <span className="text-sm text-gray-600 dark:text-gray-400">{dict.common.language}</span>
                 <LanguageSwitcher currentLang={lang} dictionary={dict} />
               </div>
             </div>
