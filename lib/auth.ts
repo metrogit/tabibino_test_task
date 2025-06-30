@@ -22,6 +22,7 @@ export const authOptions = {
 
         try {
           const { email, password } = credentials;
+          const baseUrl = process.env.NEXTAUTH_URL || "http://localhost:3000";
 
           const res = await fetch("/api/auth/login", {
             method: "POST",
