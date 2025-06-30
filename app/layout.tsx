@@ -3,12 +3,12 @@ import { ThemeProvider } from '@/components/providers/theme-provider';
 import { AuthProvider } from '@/components/providers/auth-provider';
 import type { Metadata } from 'next';
 import '@/app/globals.css';
-import { getDictionary, Locale, LOCALES } from '@/lib/dictionaries';
+import { Locale, LOCALES } from '@/lib/dictionaries';
 import { getServerSession } from 'next-auth/next';
 import { authOptions } from '@/lib/auth';
-import { headers } from 'next/headers';
 import { generateMetadata as generateSEOMetadata, generateStructuredData } from '@/lib/seo';
 import Script from 'next/script';
+import { PagesTopLoader } from 'nextjs-toploader/pages';
 
 export async function generateStaticParams() {
   return LOCALES.map((locale) => ({ lang: locale }));
@@ -41,10 +41,7 @@ export default async function RootLayout({
   const session = await getServerSession(authOptions) as any;
   const { lang } = await params;
   
-  // Get the current pathname to determine if we should show the header
-  const headersList = await headers();
-  const pathname = headersList.get('x-pathname') || '';
-
+  // SEO STUFF
   const structuredData = generateStructuredData('medicalOrganization');
 
   return (
@@ -72,6 +69,7 @@ export default async function RootLayout({
         >
           <AuthProvider session={session}>
             <main role="main" id="main-content">
+              <PagesTopLoader />
               {children}
             </main>
             <Toaster 

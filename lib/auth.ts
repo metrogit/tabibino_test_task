@@ -25,6 +25,7 @@ export const authOptions = {
           const { email, password } = credentials;
           const baseUrl = process.env.NEXTAUTH_URL;
 
+          //Hardcoded the base url i will fix it soon ------- 
           const res = await fetch(`https://tabibino-test-task.vercel.app/api/auth/login`, {
             method: "POST",
             headers: {
