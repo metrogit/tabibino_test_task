@@ -59,6 +59,24 @@ const nextConfig: NextConfig = {
           }
         ],
       },
+      // Font file headers for better mobile performance
+      {
+        source: '/fonts/(.*)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable'
+          },
+          {
+            key: 'Access-Control-Allow-Origin',
+            value: '*'
+          },
+          {
+            key: 'Content-Type',
+            value: 'font/woff2'
+          }
+        ],
+      },
     ];
   },
 };

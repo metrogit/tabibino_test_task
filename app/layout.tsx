@@ -57,6 +57,30 @@ export default async function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+        
+        {/* Preload critical Persian fonts for mobile performance */}
+        <link 
+          rel="preload" 
+          href="/fonts/IRANYekanX-Regular.woff2" 
+          as="font" 
+          type="font/woff2" 
+          crossOrigin="anonymous"
+        />
+        <link 
+          rel="preload" 
+          href="/fonts/IRANYekanX-Medium.woff2" 
+          as="font" 
+          type="font/woff2" 
+          crossOrigin="anonymous"
+        />
+        <link 
+          rel="preload" 
+          href="/fonts/IRANYekanX-Bold.woff2" 
+          as="font" 
+          type="font/woff2" 
+          crossOrigin="anonymous"
+        />
+        
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow" />
       </head>
