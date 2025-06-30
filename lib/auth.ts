@@ -8,6 +8,7 @@ export const loginSchema = z.object({
 });
 
 export const authOptions = {
+  // Hardcoded the base url will fix it soon
   secret: "nr^6w0!&6@v90=^2qx69&-jn#@2ox5l8dy&_b&=2f#gys&j%)c",
   providers: [
     CredentialsProvider({
@@ -25,14 +26,17 @@ export const authOptions = {
           const { email, password } = credentials;
           const baseUrl = process.env.NEXTAUTH_URL;
 
-          //Hardcoded the base url i will fix it soon ------- 
-          const res = await fetch(`https://tabibino-test-task.vercel.app/api/auth/login`, {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ email, password }),
-          });
+          // Hardcoded the base url will fix it soon
+          const res = await fetch(
+            `https://tabibino-test-task.vercel.app/api/auth/login`,
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({ email, password }),
+            }
+          );
 
           const data = await res.json();
 
@@ -61,7 +65,7 @@ export const authOptions = {
     }),
   ],
   callbacks: {
-    async jwt({ token, user }:any) {
+    async jwt({ token, user }: any) {
       if (user) {
         token.accessToken = user.accessToken;
         token.email = user.email;
@@ -69,7 +73,7 @@ export const authOptions = {
       }
       return token;
     },
-    async session({ session, token }:any) {
+    async session({ session, token }: any) {
       session.user = {
         email: token.email,
         accessToken: token.accessToken,

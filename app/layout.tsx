@@ -8,7 +8,7 @@ import { getServerSession } from 'next-auth/next';
 import { authOptions } from '@/lib/auth';
 import { generateMetadata as generateSEOMetadata, generateStructuredData } from '@/lib/seo';
 import Script from 'next/script';
-import { PagesTopLoader } from 'nextjs-toploader/pages';
+import NextTopLoader from 'nextjs-toploader';
 
 export async function generateStaticParams() {
   return LOCALES.map((locale) => ({ lang: locale }));
@@ -69,7 +69,7 @@ export default async function RootLayout({
         >
           <AuthProvider session={session}>
             <main role="main" id="main-content">
-              <PagesTopLoader />
+            <NextTopLoader />
               {children}
             </main>
             <Toaster 
