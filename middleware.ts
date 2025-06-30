@@ -1,5 +1,6 @@
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
+// @ts-ignore
 import { getToken } from "next-auth/jwt";
 import { match } from '@formatjs/intl-localematcher';
 import Negotiator from 'negotiator';
