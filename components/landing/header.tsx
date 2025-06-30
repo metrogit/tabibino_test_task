@@ -116,7 +116,7 @@ const Header = memo(({ dict, lang }: HeaderProps) => {
           <div className="flex items-center justify-between gap-2 sm:gap-4 lg:gap-8">
             {/* Logo */}
             <Link 
-              href={"/" as any}
+              href={`/${lang}`}
               className="flex items-center gap-1 sm:gap-2 group focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-lg flex-shrink-0"
               aria-label="Tabibino - Go to homepage"
             >
