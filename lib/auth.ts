@@ -23,9 +23,9 @@ export const authOptions = {
 
         try {
           const { email, password } = credentials;
-          const baseUrl = process.env.NEXTAUTH_URL || "http://localhost:3000";
+          const baseUrl = process.env.NEXTAUTH_URL;
 
-          const res = await fetch(`${baseUrl}/api/auth/login`, {
+          const res = await fetch(`https://tabibino-test-task.vercel.app/api/auth/login`, {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
