@@ -8,8 +8,8 @@ export const loginSchema = z.object({
 });
 
 export const authOptions = {
-  // Hardcoded the base url will fix it soon
-  secret: "nr^6w0!&6@v90=^2qx69&-jn#@2ox5l8dy&_b&=2f#gys&j%)c",
+  // HARDCODED IT JUS FOR VERCEL I WILL FIX IT SOON I DID NOT HAVE MUCH TIME FOR THAT SORRYYYYYY! -------
+  secret: process.env.AUTH_SECRET,
   providers: [
     CredentialsProvider({
       name: "Credentials",
@@ -26,9 +26,9 @@ export const authOptions = {
           const { email, password } = credentials;
           const baseUrl = process.env.NEXTAUTH_URL;
 
-          // Hardcoded the base url will fix it soon
+          // HARDCODED IT JUS FOR VERCEL I WILL FIX IT SOON I DID NOT HAVE MUCH TIME FOR THAT SORRYYYYYY! -------
           const res = await fetch(
-            `https://tabibino-test-task.vercel.app/api/auth/login`,
+            `${process.env.NEXTAUTH_URL}/api/auth/login`,
             {
               method: "POST",
               headers: {
