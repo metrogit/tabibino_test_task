@@ -8,6 +8,7 @@ export const loginSchema = z.object({
 });
 
 export const authOptions = {
+  secret: process.env.NEXTAUTH_SECRET,
   providers: [
     CredentialsProvider({
       name: "Credentials",
@@ -24,7 +25,7 @@ export const authOptions = {
           const { email, password } = credentials;
           const baseUrl = process.env.NEXTAUTH_URL || "http://localhost:3000";
 
-          const res = await fetch("/api/auth/login", {
+          const res = await fetch(`${baseUrl}/api/auth/login`, {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
