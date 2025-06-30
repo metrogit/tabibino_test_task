@@ -1,6 +1,8 @@
 import { getDictionary, type Locale } from "@/lib/dictionaries";
 import { Card } from "@/components/ui/card";
 import { Shield, Users, Settings, BarChart3, Database } from "lucide-react";
+import { requireRole } from "@/lib/auth";
+import { UserRole } from "@/types/roles";
 
 export default async function AdminPage({
   params,
@@ -8,6 +10,10 @@ export default async function AdminPage({
   params: Promise<{ lang: Locale }>;
 }) {
   const { lang } = await params;
+  
+  // Ensure only admin users can access this page
+  await requireRole(UserRole.ADMIN, lang);
+  
   const dict = await getDictionary(lang);
 
   return (

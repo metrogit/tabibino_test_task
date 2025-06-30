@@ -1,6 +1,8 @@
 import { getDictionary, type Locale } from "@/lib/dictionaries";
 import { Card } from "@/components/ui/card";
 import { Heart, Calendar, FileText, Pill, Plus } from "lucide-react";
+import { requireRole } from "@/lib/auth";
+import { UserRole } from "@/types/roles";
 
 export default async function ClientPage({
   params,
@@ -8,6 +10,10 @@ export default async function ClientPage({
   params: Promise<{ lang: Locale }>;
 }) {
   const { lang } = await params;
+  
+  // Ensure only client users can access this page
+  await requireRole(UserRole.CLIENT, lang);
+  
   const dict = await getDictionary(lang);
 
   return (
