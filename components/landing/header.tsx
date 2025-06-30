@@ -57,25 +57,25 @@ const Header = memo(({ dict, lang }: HeaderProps) => {
     switch (role) {
       case UserRole.ADMIN:
         return {
-          route: '/admin',
+          route: `/${lang}/admin`,
           icon: <ShieldCheck className="h-4 w-4" aria-hidden="true" />,
           label: dict.pages.admin.title,
         };
       case UserRole.DOCTOR:
         return {
-          route: '/doctor',
+          route: `/${lang}/doctor`,
           icon: <UserCog className="h-4 w-4" aria-hidden="true" />,
           label: dict.pages.doctor.title,
         };
       case UserRole.CLIENT:
         return {
-          route: '/client',
+          route: `/${lang}/client`,
           icon: <Heart className="h-4 w-4" aria-hidden="true" />,
           label: dict.pages.client.title,
         };
       default:
         return {
-          route: '/',
+          route: `/${lang}/`,
           icon: <User className="h-4 w-4" aria-hidden="true" />,
           label: 'Dashboard',
         };
