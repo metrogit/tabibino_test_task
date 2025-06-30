@@ -7,9 +7,9 @@ import { UserRole } from "@/types/roles";
 interface AuthContextType {
   isAuthenticated: boolean;
   user: {
-    email?: string;
-    role?: UserRole;
-    accessToken?: string;
+    email: string;
+    role: UserRole;
+    accessToken: string;
   } | null;
   hasRole: (role: UserRole) => boolean;
   isLoading: boolean;
@@ -23,12 +23,16 @@ function AuthProviderInner({ children }: { children: ReactNode }) {
   const isAuthenticated = !!session?.user;
 
   const hasRole = (role: UserRole): boolean => {
-    return session?.user?.role === role;
+    return (session?.user as any)?.role === role;
   };
 
   const value: AuthContextType = {
     isAuthenticated,
-    user: session?.user || null,
+    user: session?.user && session.user.email ? {
+      email: session.user.email,
+      role: (session.user as any).role,
+      accessToken: (session.user as any).accessToken,
+    } : null,
     hasRole,
     isLoading,
   };
@@ -36,9 +40,15 @@ function AuthProviderInner({ children }: { children: ReactNode }) {
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }
 
-export function AuthProvider({ children }: { children: ReactNode }) {
+export function AuthProvider({ 
+  children, 
+  session 
+}: { 
+  children: ReactNode;
+  session?: any;
+}) {
   return (
-    <SessionProvider>
+    <SessionProvider session={session}>
       <AuthProviderInner>{children}</AuthProviderInner>
     </SessionProvider>
   );
